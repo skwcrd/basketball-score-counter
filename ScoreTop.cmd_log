@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "/root/VHDL/Sport/ScoreCounts/ScoreTop.xst" -ofn "/root/VHDL/Sport/ScoreCounts/ScoreTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ScoreTop.ucf -p xc3s200-tq144-5 ScoreTop.ngc ScoreTop.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o ScoreTop_map.ncd ScoreTop.ngd ScoreTop.pcf 
+par -w -intstyle ise -ol high -t 1 ScoreTop_map.ncd ScoreTop.ncd ScoreTop.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ScoreTop.twx ScoreTop.ncd -o ScoreTop.twr ScoreTop.pcf -ucf ScoreTop.ucf 
+bitgen -intstyle ise -f ScoreTop.ut ScoreTop.ncd 

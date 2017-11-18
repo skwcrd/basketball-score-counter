@@ -1,0 +1,16 @@
+AR counter behavioral /root/VHDL/Sport/ScoreCounts/Counter.vhd sub00/vhpl05 1511012703
+EN scoretop NULL /root/VHDL/Sport/ScoreCounts/ScoreTop.vhd sub00/vhpl14 1511012712
+AR clk1ms behavioral /root/VHDL/Sport/ScoreCounts/CLK1ms.vhd sub00/vhpl01 1511012699
+AR debouce behavioral /root/VHDL/Sport/ScoreCounts/Debouce.vhd sub00/vhpl03 1511012701
+AR bcd behavioral /root/VHDL/Sport/ScoreCounts/BCD.vhd sub00/vhpl13 1511012711
+EN counter NULL /root/VHDL/Sport/ScoreCounts/Counter.vhd sub00/vhpl04 1511012702
+AR fsm_push behavioral /root/VHDL/Sport/ScoreCounts/FSM_Push.vhd sub00/vhpl07 1511012705
+EN fsm_com NULL /root/VHDL/Sport/ScoreCounts/FSM_COM.vhd sub00/vhpl08 1511012706
+EN debouce NULL /root/VHDL/Sport/ScoreCounts/Debouce.vhd sub00/vhpl02 1511012700
+AR fsm_com behavioral /root/VHDL/Sport/ScoreCounts/FSM_COM.vhd sub00/vhpl09 1511012707
+AR scoretop structural /root/VHDL/Sport/ScoreCounts/ScoreTop.vhd sub00/vhpl15 1511012713
+EN bcd NULL /root/VHDL/Sport/ScoreCounts/BCD.vhd sub00/vhpl12 1511012710
+EN clk1ms NULL /root/VHDL/Sport/ScoreCounts/CLK1ms.vhd sub00/vhpl00 1511012698
+EN fsm_push NULL /root/VHDL/Sport/ScoreCounts/FSM_Push.vhd sub00/vhpl06 1511012704
+AR scandigit behavioral /root/VHDL/Sport/ScoreCounts/ScanDigit.vhd sub00/vhpl11 1511012709
+EN scandigit NULL /root/VHDL/Sport/ScoreCounts/ScanDigit.vhd sub00/vhpl10 1511012708

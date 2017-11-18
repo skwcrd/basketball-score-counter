@@ -1,0 +1,551 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Reading design: ScoreTop.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ScoreTop.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ScoreTop"
+Output Format                      : NGC
+Target Device                      : xc3s200-5-tq144
+
+---- Source Options
+Top Module Name                    : ScoreTop
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/root/VHDL/Sport/ScoreCounts/CLK1ms.vhd" in Library work.
+Entity <CLK1ms> compiled.
+Entity <CLK1ms> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/root/VHDL/Sport/ScoreCounts/Debouce.vhd" in Library work.
+Entity <Debouce> compiled.
+Entity <Debouce> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/root/VHDL/Sport/ScoreCounts/Counter.vhd" in Library work.
+Entity <Counter> compiled.
+Entity <Counter> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/root/VHDL/Sport/ScoreCounts/FSM_Push.vhd" in Library work.
+Entity <FSM_Push> compiled.
+Entity <FSM_Push> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/root/VHDL/Sport/ScoreCounts/FSM_COM.vhd" in Library work.
+Entity <FSM_COM> compiled.
+Entity <FSM_COM> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/root/VHDL/Sport/ScoreCounts/ScanDigit.vhd" in Library work.
+Entity <ScanDigit> compiled.
+Entity <ScanDigit> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/root/VHDL/Sport/ScoreCounts/BCD.vhd" in Library work.
+Entity <BCD> compiled.
+Entity <BCD> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/root/VHDL/Sport/ScoreCounts/ScoreTop.vhd" in Library work.
+Entity <ScoreTop> compiled.
+Entity <ScoreTop> (Architecture <Structural>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <ScoreTop> in library <work> (architecture <Structural>).
+
+Analyzing hierarchy for entity <CLK1ms> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <Debouce> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <Counter> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <FSM_Push> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <FSM_COM> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <ScanDigit> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <BCD> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <ScoreTop> in library <work> (Architecture <Structural>).
+Entity <ScoreTop> analyzed. Unit <ScoreTop> generated.
+
+Analyzing Entity <CLK1ms> in library <work> (Architecture <Behavioral>).
+Entity <CLK1ms> analyzed. Unit <CLK1ms> generated.
+
+Analyzing Entity <Debouce> in library <work> (Architecture <Behavioral>).
+Entity <Debouce> analyzed. Unit <Debouce> generated.
+
+Analyzing Entity <Counter> in library <work> (Architecture <Behavioral>).
+Entity <Counter> analyzed. Unit <Counter> generated.
+
+Analyzing Entity <FSM_Push> in library <work> (Architecture <Behavioral>).
+Entity <FSM_Push> analyzed. Unit <FSM_Push> generated.
+
+Analyzing Entity <FSM_COM> in library <work> (Architecture <Behavioral>).
+Entity <FSM_COM> analyzed. Unit <FSM_COM> generated.
+
+Analyzing Entity <ScanDigit> in library <work> (Architecture <Behavioral>).
+Entity <ScanDigit> analyzed. Unit <ScanDigit> generated.
+
+Analyzing Entity <BCD> in library <work> (Architecture <Behavioral>).
+Entity <BCD> analyzed. Unit <BCD> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <CLK1ms>.
+    Related source file is "/root/VHDL/Sport/ScoreCounts/CLK1ms.vhd".
+    Found 1-bit register for signal <r1ms>.
+    Found 15-bit up counter for signal <rCnt>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <CLK1ms> synthesized.
+
+
+Synthesizing Unit <Debouce>.
+    Related source file is "/root/VHDL/Sport/ScoreCounts/Debouce.vhd".
+    Found 1-bit register for signal <O>.
+    Found 3-bit up counter for signal <rCnt>.
+    Found 4-bit register for signal <rDebouce>.
+    Found 1-bit register for signal <rTick>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   6 D-type flip-flop(s).
+Unit <Debouce> synthesized.
+
+
+Synthesizing Unit <Counter>.
+    Related source file is "/root/VHDL/Sport/ScoreCounts/Counter.vhd".
+    Found 1-bit register for signal <rCnt>.
+    Found 5-bit comparator greatequal for signal <rCnt$cmp_ge0000> created at line 56.
+    Found 5-bit comparator greatequal for signal <rCnt$cmp_ge0001> created at line 64.
+    Found 4-bit register for signal <wDigit1>.
+    Found 4-bit adder for signal <wDigit1$addsub0000> created at line 41.
+    Found 5-bit comparator greatequal for signal <wDigit1$cmp_ge0000> created at line 34.
+    Found 5-bit comparator greatequal for signal <wDigit1$cmp_ge0001> created at line 34.
+    Found 4-bit register for signal <wDigit2>.
+    Found 4-bit addsub for signal <wDigit2$addsub0000>.
+    Found 4-bit register for signal <wScore>.
+    Found 5-bit comparator greater for signal <wScore$cmp_gt0000> created at line 83.
+    Summary:
+	inferred  13 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   5 Comparator(s).
+Unit <Counter> synthesized.
+
+
+Synthesizing Unit <FSM_Push>.
+    Related source file is "/root/VHDL/Sport/ScoreCounts/FSM_Push.vhd".
+    Found 1-bit register for signal <oT1Push1>.
+    Found 1-bit register for signal <oT1Push2>.
+    Found 1-bit register for signal <oT1Push3>.
+    Found 1-bit register for signal <oT2Push1>.
+    Found 1-bit register for signal <oT2Push2>.
+    Found 1-bit register for signal <oT2Push3>.
+    Found 1-bit register for signal <curr_state<0>>.
+    Summary:
+	inferred   7 D-type flip-flop(s).
+Unit <FSM_Push> synthesized.
+
+
+Synthesizing Unit <FSM_COM>.
+    Related source file is "/root/VHDL/Sport/ScoreCounts/FSM_COM.vhd".
+    Found 1-bit register for signal <curr_state<0>>.
+    Found 1-bit register for signal <rCnP>.
+    Found 1-bit register for signal <rCnt>.
+    Found 9-bit up counter for signal <rCnt500ms>.
+    Found 4-bit register for signal <wCom>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   7 D-type flip-flop(s).
+Unit <FSM_COM> synthesized.
+
+
+Synthesizing Unit <ScanDigit>.
+    Related source file is "/root/VHDL/Sport/ScoreCounts/ScanDigit.vhd".
+    Found 4-bit up counter for signal <rCnt>.
+    Found 4-bit register for signal <rShift>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <ScanDigit> synthesized.
+
+
+Synthesizing Unit <BCD>.
+    Related source file is "/root/VHDL/Sport/ScoreCounts/BCD.vhd".
+    Found 16x7-bit ROM for signal <O>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <BCD> synthesized.
+
+
+Synthesizing Unit <ScoreTop>.
+    Related source file is "/root/VHDL/Sport/ScoreCounts/ScoreTop.vhd".
+Unit <ScoreTop> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 4
+ 4-bit adder                                           : 2
+ 4-bit addsub                                          : 2
+# Counters                                             : 7
+ 15-bit up counter                                     : 1
+ 3-bit up counter                                      : 4
+ 4-bit up counter                                      : 1
+ 9-bit up counter                                      : 1
+# Registers                                            : 33
+ 1-bit register                                        : 21
+ 4-bit register                                        : 12
+# Comparators                                          : 10
+ 5-bit comparator greatequal                           : 8
+ 5-bit comparator greater                              : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 4
+ 4-bit adder                                           : 2
+ 4-bit addsub                                          : 2
+# Counters                                             : 7
+ 15-bit up counter                                     : 1
+ 3-bit up counter                                      : 4
+ 4-bit up counter                                      : 1
+ 9-bit up counter                                      : 1
+# Registers                                            : 69
+ Flip-Flops                                            : 69
+# Comparators                                          : 10
+ 5-bit comparator greatequal                           : 8
+ 5-bit comparator greater                              : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ScoreTop> ...
+
+Optimizing unit <Debouce> ...
+
+Optimizing unit <Counter> ...
+
+Optimizing unit <ScanDigit> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ScoreTop, actual ratio is 5.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 109
+ Flip-Flops                                            : 109
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : ScoreTop.ngr
+Top Level Output File Name         : ScoreTop
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 25
+
+Cell Usage :
+# BELS                             : 244
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 22
+#      LUT2                        : 30
+#      LUT2_D                      : 1
+#      LUT2_L                      : 2
+#      LUT3                        : 20
+#      LUT3_D                      : 3
+#      LUT3_L                      : 7
+#      LUT4                        : 89
+#      LUT4_D                      : 6
+#      LUT4_L                      : 7
+#      MUXCY                       : 22
+#      MUXF5                       : 6
+#      VCC                         : 1
+#      XORCY                       : 24
+# FlipFlops/Latches                : 109
+#      FDC                         : 31
+#      FDCE                        : 60
+#      FDE                         : 9
+#      FDPE                        : 3
+#      FDR                         : 6
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 24
+#      IBUF                        : 5
+#      OBUF                        : 19
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200tq144-5 
+
+ Number of Slices:                      102  out of   1920     5%  
+ Number of Slice Flip Flops:            109  out of   3840     2%  
+ Number of 4 input LUTs:                190  out of   3840     4%  
+ Number of IOs:                          25
+ Number of bonded IOBs:                  25  out of     97    25%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 109   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+Rstb_inv(u_Team2/Rstb_inv1_INV_0:O)| NONE(u_CLK1ms/r1ms)    | 94    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 6.236ns (Maximum Frequency: 160.355MHz)
+   Minimum input arrival time before clock: 3.714ns
+   Maximum output required time after clock: 11.175ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 6.236ns (frequency: 160.355MHz)
+  Total number of paths / destination ports: 1544 / 181
+-------------------------------------------------------------------------
+Delay:               6.236ns (Levels of Logic = 3)
+  Source:            u_Team2/wScore_3 (FF)
+  Destination:       u_Team2/wDigit2_3 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: u_Team2/wScore_3 to u_Team2/wDigit2_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.626   1.040  u_Team2/wScore_3 (u_Team2/wScore_3)
+     LUT4:I0->O            1   0.479   0.851  u_Team2/wDigit1_and000010 (u_Team2/wDigit1_and000010)
+     LUT4_D:I1->O          9   0.479   0.978  u_Team2/wDigit1_and000019 (u_Team2/wDigit1_and0000)
+     LUT4:I3->O            4   0.479   0.779  u_Team2/wDigit2_not00021 (u_Team2/wDigit2_not0002)
+     FDCE:CE                   0.524          u_Team2/wDigit2_0
+    ----------------------------------------
+    Total                      6.236ns (2.587ns logic, 3.649ns route)
+                                       (41.5% logic, 58.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 13 / 13
+-------------------------------------------------------------------------
+Offset:              3.714ns (Levels of Logic = 2)
+  Source:            Rstb (PAD)
+  Destination:       u_FSMcom/rCnt500ms_8 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: Rstb to u_FSMcom/rCnt500ms_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.715   1.040  Rstb_IBUF (Rstb_IBUF)
+     LUT2:I0->O            9   0.479   0.955  u_FSMcom/rCnt500ms_and00011 (u_FSMcom/rCnt500ms_and0001)
+     FDE:CE                    0.524          u_FSMcom/rCnt500ms_0
+    ----------------------------------------
+    Total                      3.714ns (1.718ns logic, 1.996ns route)
+                                       (46.3% logic, 53.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 404 / 19
+-------------------------------------------------------------------------
+Offset:              11.175ns (Levels of Logic = 5)
+  Source:            u_ScanDigit/rShift_3 (FF)
+  Destination:       oBCD<6> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: u_ScanDigit/rShift_3 to oBCD<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            11   0.626   1.267  u_ScanDigit/rShift_3 (u_ScanDigit/rShift_3)
+     LUT3:I0->O            1   0.479   0.000  u_ScanDigit/oData<3>62_SW0_F (N126)
+     MUXF5:I0->O           1   0.314   0.740  u_ScanDigit/oData<3>62_SW0 (N118)
+     LUT4:I2->O            7   0.479   1.201  u_ScanDigit/oData<3>62 (wData<3>)
+     LUT4:I0->O            1   0.479   0.681  u_BCD/Mrom_O41 (oBCD_4_OBUF)
+     OBUF:I->O                 4.909          oBCD_4_OBUF (oBCD<4>)
+    ----------------------------------------
+    Total                     11.175ns (7.286ns logic, 3.889ns route)
+                                       (65.2% logic, 34.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 6.51 secs
+ 
+--> 
+
+
+Total memory usage is 514648 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+
