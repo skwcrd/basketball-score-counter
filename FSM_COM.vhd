@@ -6,7 +6,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 Entity FSM_COM is
 Port(
 	CLK,Rstb : in std_logic;
-	i1ms : in std_logic;
+	i1s : in std_logic;
 	I : in std_logic;
 	iCOM : in std_logic_vector(3 downto 0);
 	com : out std_logic_vector(3 downto 0)
@@ -18,8 +18,6 @@ Architecture Behavioral of FSM_COM is
 	signal curr_state,next_state : State_Type;
 	signal rCnt : std_logic := '0';
 	signal wCom : std_logic_vector(3 downto 0);
-	signal rCnP : std_logic := '0';
-	signal rCnt500ms : std_logic_vector(8 downto 0);
 Begin
 
 	---------- REGISTOR STATE ----------
@@ -66,14 +64,14 @@ Begin
 			case curr_state is
 				when S1 =>	if(rCnt='0') then
 									wCom <= iCOM(3 downto 2) & "11";
-									if(rCnP='1') then
+									if(i1s='1') then
 										rCnt <= '1';
 									else
 										rCnt <= '0';
 									end if;
 								elsif(rCnt='1') then
 									wCom <= iCOM;
-									if(rCnP='1') then
+									if(i1s='1') then
 										rCnt <= '0';
 									else
 										rCnt <= '1';
@@ -85,14 +83,14 @@ Begin
 								
 				when S2 =>	if(rCnt='0') then
 									wCom <= "11" & iCOM(1 downto 0);
-									if(rCnP='1') then
+									if(i1s='1') then
 										rCnt <= '1';
 									else
 										rCnt <= '0';
 									end if;
 								elsif(rCnt='1') then
 									wCom <= iCOM;
-									if(rCnP='1') then
+									if(i1s='1') then
 										rCnt <= '0';
 									else
 										rCnt <= '1';
@@ -104,24 +102,6 @@ Begin
 			end case;
 		end if;
 	End Process;
-	
-	u_rCnt : Process(CLK,Rstb)
-	Begin
-		if(Rstb='0') then
-			rCnP <= '0';
-		elsif(rising_edge(CLK)) then
-			if(rCnt500ms=499 and i1ms='1') then
-				rCnt500ms <= (others => '0');
-				rCnP <= '1';
-			elsif(i1ms='1') then
-				rCnt500ms <= rCnt500ms + 1;
-				rCnP <= '0';
-			else
-				rCnt500ms <= rCnt500ms;
-				rCnP <= rCnP;
-			end if;
-		end if;
-	end Process;
 
 End Behavioral;
 

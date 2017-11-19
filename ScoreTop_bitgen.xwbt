@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=/root/VHDL/Sport/ScoreCounts/ScoreTop.ncd
-OUTFILE=/root/VHDL/Sport/ScoreCounts/ScoreTop.bit
+INFILE=D:\ScoreCounts\ScoreTop.ncd
+OUTFILE=D:\ScoreCounts\ScoreTop.bit
 FAMILY=Spartan3
 PART=xc3s200-5tq144
-WORKINGDIR=/root/VHDL/Sport/ScoreCounts
+WORKINGDIR=D:\ScoreCounts
 LICENSE=WebPack
 USER_INFO=210640308_0_0_717

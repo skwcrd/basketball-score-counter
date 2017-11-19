@@ -1,10 +1,10 @@
 --------------------------------------------------------------------------------
-Release 14.7 Trace  (lin64)
+Release 14.7 Trace  (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 5 -n
-3 -fastpaths -xml ScoreTop.twx ScoreTop.ncd -o ScoreTop.twr ScoreTop.pcf -ucf
-ScoreTop.ucf
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
+-n 3 -fastpaths -xml ScoreTop.twx ScoreTop.ncd -o ScoreTop.twr ScoreTop.pcf
+-ucf ScoreTop.ucf
 
 Design file:              ScoreTop.ncd
 Physical constraint file: ScoreTop.pcf
@@ -37,325 +37,325 @@ INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and
 Timing constraint: ts_clk = PERIOD TIMEGRP "CLK" 40 ns HIGH 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
- 1544 paths analyzed, 351 endpoints analyzed, 0 failing endpoints
+ 1575 paths analyzed, 354 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   6.115ns.
+ Minimum period is   6.457ns.
 --------------------------------------------------------------------------------
 
-Paths for end point u_Team1/rCnt (SLICE_X25Y8.CE), 19 paths
+Paths for end point u_Team1/rCnt (SLICE_X23Y8.CE), 19 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     33.885ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               u_Team1/wDigit2_0 (FF)
+Slack (setup path):     33.543ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u_Team1/wScore_3 (FF)
   Destination:          u_Team1/rCnt (FF)
   Requirement:          40.000ns
-  Data Path Delay:      6.114ns (Levels of Logic = 3)
-  Clock Path Skew:      -0.001ns (0.122 - 0.123)
+  Data Path Delay:      6.457ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
   Source Clock:         CLK_BUFGP rising at 0.000ns
   Destination Clock:    CLK_BUFGP rising at 40.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: u_Team1/wDigit2_0 to u_Team1/rCnt
+  Maximum Data Path: u_Team1/wScore_3 to u_Team1/rCnt
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X23Y11.YQ      Tcko                  0.626   u_Team1/wDigit2<0>
-                                                       u_Team1/wDigit2_0
-    SLICE_X24Y8.F1       net (fanout=9)        0.669   u_Team1/wDigit2<0>
-    SLICE_X24Y8.X        Tilo                  0.529   N108
-                                                       u_Team1/wDigit1_and000019_SW0
-    SLICE_X25Y9.G2       net (fanout=1)        1.292   N108
-    SLICE_X25Y9.Y        Tilo                  0.479   u_Team1/wDigit1_not0002
+    SLICE_X33Y8.XQ       Tcko                  0.626   u_Team1/wScore<3>
+                                                       u_Team1/wScore_3
+    SLICE_X32Y9.F3       net (fanout=2)        1.204   u_Team1/wScore<3>
+    SLICE_X32Y9.X        Tilo                  0.529   u_Team1/wDigit1_and000010
+                                                       u_Team1/wDigit1_and000010
+    SLICE_X20Y9.G2       net (fanout=1)        0.962   u_Team1/wDigit1_and000010
+    SLICE_X20Y9.Y        Tilo                  0.529   u_Team1/wDigit1_not0002
                                                        u_Team1/wDigit1_and000019
-    SLICE_X24Y9.F1       net (fanout=10)       0.270   u_Team1/wDigit1_and0000
-    SLICE_X24Y9.X        Tilo                  0.529   u_Team1/rCnt_not0001
+    SLICE_X22Y9.F3       net (fanout=10)       0.358   u_Team1/wDigit1_and0000
+    SLICE_X22Y9.X        Tilo                  0.529   u_Team1/rCnt_not0001
                                                        u_Team1/rCnt_not0001
-    SLICE_X25Y8.CE       net (fanout=1)        1.196   u_Team1/rCnt_not0001
-    SLICE_X25Y8.CLK      Tceck                 0.524   u_Team1/rCnt
+    SLICE_X23Y8.CE       net (fanout=1)        1.196   u_Team1/rCnt_not0001
+    SLICE_X23Y8.CLK      Tceck                 0.524   u_Team1/rCnt
                                                        u_Team1/rCnt
     -------------------------------------------------  ---------------------------
-    Total                                      6.114ns (2.687ns logic, 3.427ns route)
-                                                       (43.9% logic, 56.1% route)
+    Total                                      6.457ns (2.737ns logic, 3.720ns route)
+                                                       (42.4% logic, 57.6% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     33.930ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               u_Team1/wDigit2_1 (FF)
+Slack (setup path):     33.896ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u_Team1/wScore_2 (FF)
   Destination:          u_Team1/rCnt (FF)
   Requirement:          40.000ns
-  Data Path Delay:      6.069ns (Levels of Logic = 3)
-  Clock Path Skew:      -0.001ns (0.000 - 0.001)
+  Data Path Delay:      6.104ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
   Source Clock:         CLK_BUFGP rising at 0.000ns
   Destination Clock:    CLK_BUFGP rising at 40.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: u_Team1/wDigit2_1 to u_Team1/rCnt
+  Maximum Data Path: u_Team1/wScore_2 to u_Team1/rCnt
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X24Y10.XQ      Tcko                  0.626   u_Team1/wDigit2<1>
-                                                       u_Team1/wDigit2_1
-    SLICE_X24Y8.F2       net (fanout=9)        0.624   u_Team1/wDigit2<1>
-    SLICE_X24Y8.X        Tilo                  0.529   N108
-                                                       u_Team1/wDigit1_and000019_SW0
-    SLICE_X25Y9.G2       net (fanout=1)        1.292   N108
-    SLICE_X25Y9.Y        Tilo                  0.479   u_Team1/wDigit1_not0002
+    SLICE_X33Y8.YQ       Tcko                  0.626   u_Team1/wScore<3>
+                                                       u_Team1/wScore_2
+    SLICE_X32Y9.F1       net (fanout=3)        0.851   u_Team1/wScore<2>
+    SLICE_X32Y9.X        Tilo                  0.529   u_Team1/wDigit1_and000010
+                                                       u_Team1/wDigit1_and000010
+    SLICE_X20Y9.G2       net (fanout=1)        0.962   u_Team1/wDigit1_and000010
+    SLICE_X20Y9.Y        Tilo                  0.529   u_Team1/wDigit1_not0002
                                                        u_Team1/wDigit1_and000019
-    SLICE_X24Y9.F1       net (fanout=10)       0.270   u_Team1/wDigit1_and0000
-    SLICE_X24Y9.X        Tilo                  0.529   u_Team1/rCnt_not0001
+    SLICE_X22Y9.F3       net (fanout=10)       0.358   u_Team1/wDigit1_and0000
+    SLICE_X22Y9.X        Tilo                  0.529   u_Team1/rCnt_not0001
                                                        u_Team1/rCnt_not0001
-    SLICE_X25Y8.CE       net (fanout=1)        1.196   u_Team1/rCnt_not0001
-    SLICE_X25Y8.CLK      Tceck                 0.524   u_Team1/rCnt
+    SLICE_X23Y8.CE       net (fanout=1)        1.196   u_Team1/rCnt_not0001
+    SLICE_X23Y8.CLK      Tceck                 0.524   u_Team1/rCnt
                                                        u_Team1/rCnt
     -------------------------------------------------  ---------------------------
-    Total                                      6.069ns (2.687ns logic, 3.382ns route)
+    Total                                      6.104ns (2.737ns logic, 3.367ns route)
+                                                       (44.8% logic, 55.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     34.131ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u_Team1/wScore_0 (FF)
+  Destination:          u_Team1/rCnt (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      5.869ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_BUFGP rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: u_Team1/wScore_0 to u_Team1/rCnt
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X32Y8.YQ       Tcko                  0.626   u_Team1/wScore<1>
+                                                       u_Team1/wScore_0
+    SLICE_X32Y9.F4       net (fanout=3)        0.616   u_Team1/wScore<0>
+    SLICE_X32Y9.X        Tilo                  0.529   u_Team1/wDigit1_and000010
+                                                       u_Team1/wDigit1_and000010
+    SLICE_X20Y9.G2       net (fanout=1)        0.962   u_Team1/wDigit1_and000010
+    SLICE_X20Y9.Y        Tilo                  0.529   u_Team1/wDigit1_not0002
+                                                       u_Team1/wDigit1_and000019
+    SLICE_X22Y9.F3       net (fanout=10)       0.358   u_Team1/wDigit1_and0000
+    SLICE_X22Y9.X        Tilo                  0.529   u_Team1/rCnt_not0001
+                                                       u_Team1/rCnt_not0001
+    SLICE_X23Y8.CE       net (fanout=1)        1.196   u_Team1/rCnt_not0001
+    SLICE_X23Y8.CLK      Tceck                 0.524   u_Team1/rCnt
+                                                       u_Team1/rCnt
+    -------------------------------------------------  ---------------------------
+    Total                                      5.869ns (2.737ns logic, 3.132ns route)
+                                                       (46.6% logic, 53.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point u_Team1/wDigit1_2 (SLICE_X21Y9.CE), 16 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     33.819ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u_Team1/wScore_3 (FF)
+  Destination:          u_Team1/wDigit1_2 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      6.181ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_BUFGP rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: u_Team1/wScore_3 to u_Team1/wDigit1_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X33Y8.XQ       Tcko                  0.626   u_Team1/wScore<3>
+                                                       u_Team1/wScore_3
+    SLICE_X32Y9.F3       net (fanout=2)        1.204   u_Team1/wScore<3>
+    SLICE_X32Y9.X        Tilo                  0.529   u_Team1/wDigit1_and000010
+                                                       u_Team1/wDigit1_and000010
+    SLICE_X20Y9.G2       net (fanout=1)        0.962   u_Team1/wDigit1_and000010
+    SLICE_X20Y9.Y        Tilo                  0.529   u_Team1/wDigit1_not0002
+                                                       u_Team1/wDigit1_and000019
+    SLICE_X20Y9.F3       net (fanout=10)       0.058   u_Team1/wDigit1_and0000
+    SLICE_X20Y9.X        Tilo                  0.529   u_Team1/wDigit1_not0002
+                                                       u_Team1/wDigit1_not00021
+    SLICE_X21Y9.CE       net (fanout=3)        1.220   u_Team1/wDigit1_not0002
+    SLICE_X21Y9.CLK      Tceck                 0.524   u_Team1/wDigit1<2>
+                                                       u_Team1/wDigit1_2
+    -------------------------------------------------  ---------------------------
+    Total                                      6.181ns (2.737ns logic, 3.444ns route)
                                                        (44.3% logic, 55.7% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     34.044ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               u_Team1/wDigit2_2 (FF)
-  Destination:          u_Team1/rCnt (FF)
+Slack (setup path):     34.172ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u_Team1/wScore_2 (FF)
+  Destination:          u_Team1/wDigit1_2 (FF)
   Requirement:          40.000ns
-  Data Path Delay:      5.955ns (Levels of Logic = 3)
-  Clock Path Skew:      -0.001ns (0.000 - 0.001)
+  Data Path Delay:      5.828ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
   Source Clock:         CLK_BUFGP rising at 0.000ns
   Destination Clock:    CLK_BUFGP rising at 40.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: u_Team1/wDigit2_2 to u_Team1/rCnt
+  Maximum Data Path: u_Team1/wScore_2 to u_Team1/wDigit1_2
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X25Y10.XQ      Tcko                  0.626   u_Team1/wDigit2<2>
+    SLICE_X33Y8.YQ       Tcko                  0.626   u_Team1/wScore<3>
+                                                       u_Team1/wScore_2
+    SLICE_X32Y9.F1       net (fanout=3)        0.851   u_Team1/wScore<2>
+    SLICE_X32Y9.X        Tilo                  0.529   u_Team1/wDigit1_and000010
+                                                       u_Team1/wDigit1_and000010
+    SLICE_X20Y9.G2       net (fanout=1)        0.962   u_Team1/wDigit1_and000010
+    SLICE_X20Y9.Y        Tilo                  0.529   u_Team1/wDigit1_not0002
+                                                       u_Team1/wDigit1_and000019
+    SLICE_X20Y9.F3       net (fanout=10)       0.058   u_Team1/wDigit1_and0000
+    SLICE_X20Y9.X        Tilo                  0.529   u_Team1/wDigit1_not0002
+                                                       u_Team1/wDigit1_not00021
+    SLICE_X21Y9.CE       net (fanout=3)        1.220   u_Team1/wDigit1_not0002
+    SLICE_X21Y9.CLK      Tceck                 0.524   u_Team1/wDigit1<2>
+                                                       u_Team1/wDigit1_2
+    -------------------------------------------------  ---------------------------
+    Total                                      5.828ns (2.737ns logic, 3.091ns route)
+                                                       (47.0% logic, 53.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     34.407ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u_Team1/wScore_0 (FF)
+  Destination:          u_Team1/wDigit1_2 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      5.593ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_BUFGP rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: u_Team1/wScore_0 to u_Team1/wDigit1_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X32Y8.YQ       Tcko                  0.626   u_Team1/wScore<1>
+                                                       u_Team1/wScore_0
+    SLICE_X32Y9.F4       net (fanout=3)        0.616   u_Team1/wScore<0>
+    SLICE_X32Y9.X        Tilo                  0.529   u_Team1/wDigit1_and000010
+                                                       u_Team1/wDigit1_and000010
+    SLICE_X20Y9.G2       net (fanout=1)        0.962   u_Team1/wDigit1_and000010
+    SLICE_X20Y9.Y        Tilo                  0.529   u_Team1/wDigit1_not0002
+                                                       u_Team1/wDigit1_and000019
+    SLICE_X20Y9.F3       net (fanout=10)       0.058   u_Team1/wDigit1_and0000
+    SLICE_X20Y9.X        Tilo                  0.529   u_Team1/wDigit1_not0002
+                                                       u_Team1/wDigit1_not00021
+    SLICE_X21Y9.CE       net (fanout=3)        1.220   u_Team1/wDigit1_not0002
+    SLICE_X21Y9.CLK      Tceck                 0.524   u_Team1/wDigit1<2>
+                                                       u_Team1/wDigit1_2
+    -------------------------------------------------  ---------------------------
+    Total                                      5.593ns (2.737ns logic, 2.856ns route)
+                                                       (48.9% logic, 51.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point u_Team1/wDigit2_2 (SLICE_X19Y10.CE), 15 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     33.986ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u_Team1/wScore_3 (FF)
+  Destination:          u_Team1/wDigit2_2 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      6.014ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_BUFGP rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: u_Team1/wScore_3 to u_Team1/wDigit2_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X33Y8.XQ       Tcko                  0.626   u_Team1/wScore<3>
+                                                       u_Team1/wScore_3
+    SLICE_X32Y9.F3       net (fanout=2)        1.204   u_Team1/wScore<3>
+    SLICE_X32Y9.X        Tilo                  0.529   u_Team1/wDigit1_and000010
+                                                       u_Team1/wDigit1_and000010
+    SLICE_X20Y9.G2       net (fanout=1)        0.962   u_Team1/wDigit1_and000010
+    SLICE_X20Y9.Y        Tilo                  0.529   u_Team1/wDigit1_not0002
+                                                       u_Team1/wDigit1_and000019
+    SLICE_X20Y10.F4      net (fanout=10)       0.452   u_Team1/wDigit1_and0000
+    SLICE_X20Y10.X       Tilo                  0.529   u_Team1/wDigit2<0>
+                                                       u_Team1/wDigit2_not00021
+    SLICE_X19Y10.CE      net (fanout=4)        0.659   u_Team1/wDigit2_not0002
+    SLICE_X19Y10.CLK     Tceck                 0.524   u_Team1/wDigit2<2>
                                                        u_Team1/wDigit2_2
-    SLICE_X24Y8.F4       net (fanout=10)       0.510   u_Team1/wDigit2<2>
-    SLICE_X24Y8.X        Tilo                  0.529   N108
-                                                       u_Team1/wDigit1_and000019_SW0
-    SLICE_X25Y9.G2       net (fanout=1)        1.292   N108
-    SLICE_X25Y9.Y        Tilo                  0.479   u_Team1/wDigit1_not0002
-                                                       u_Team1/wDigit1_and000019
-    SLICE_X24Y9.F1       net (fanout=10)       0.270   u_Team1/wDigit1_and0000
-    SLICE_X24Y9.X        Tilo                  0.529   u_Team1/rCnt_not0001
-                                                       u_Team1/rCnt_not0001
-    SLICE_X25Y8.CE       net (fanout=1)        1.196   u_Team1/rCnt_not0001
-    SLICE_X25Y8.CLK      Tceck                 0.524   u_Team1/rCnt
-                                                       u_Team1/rCnt
     -------------------------------------------------  ---------------------------
-    Total                                      5.955ns (2.687ns logic, 3.268ns route)
-                                                       (45.1% logic, 54.9% route)
+    Total                                      6.014ns (2.737ns logic, 3.277ns route)
+                                                       (45.5% logic, 54.5% route)
 
 --------------------------------------------------------------------------------
-
-Paths for end point u_Team1/wDigit2_0 (SLICE_X23Y11.CE), 15 paths
---------------------------------------------------------------------------------
-Slack (setup path):     33.892ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               u_Team1/wDigit2_0 (FF)
-  Destination:          u_Team1/wDigit2_0 (FF)
+Slack (setup path):     34.339ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u_Team1/wScore_2 (FF)
+  Destination:          u_Team1/wDigit2_2 (FF)
   Requirement:          40.000ns
-  Data Path Delay:      6.108ns (Levels of Logic = 3)
+  Data Path Delay:      5.661ns (Levels of Logic = 3)
   Clock Path Skew:      0.000ns
   Source Clock:         CLK_BUFGP rising at 0.000ns
   Destination Clock:    CLK_BUFGP rising at 40.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: u_Team1/wDigit2_0 to u_Team1/wDigit2_0
+  Maximum Data Path: u_Team1/wScore_2 to u_Team1/wDigit2_2
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X23Y11.YQ      Tcko                  0.626   u_Team1/wDigit2<0>
-                                                       u_Team1/wDigit2_0
-    SLICE_X24Y8.F1       net (fanout=9)        0.669   u_Team1/wDigit2<0>
-    SLICE_X24Y8.X        Tilo                  0.529   N108
-                                                       u_Team1/wDigit1_and000019_SW0
-    SLICE_X25Y9.G2       net (fanout=1)        1.292   N108
-    SLICE_X25Y9.Y        Tilo                  0.479   u_Team1/wDigit1_not0002
+    SLICE_X33Y8.YQ       Tcko                  0.626   u_Team1/wScore<3>
+                                                       u_Team1/wScore_2
+    SLICE_X32Y9.F1       net (fanout=3)        0.851   u_Team1/wScore<2>
+    SLICE_X32Y9.X        Tilo                  0.529   u_Team1/wDigit1_and000010
+                                                       u_Team1/wDigit1_and000010
+    SLICE_X20Y9.G2       net (fanout=1)        0.962   u_Team1/wDigit1_and000010
+    SLICE_X20Y9.Y        Tilo                  0.529   u_Team1/wDigit1_not0002
                                                        u_Team1/wDigit1_and000019
-    SLICE_X23Y11.F1      net (fanout=10)       0.568   u_Team1/wDigit1_and0000
-    SLICE_X23Y11.X       Tilo                  0.479   u_Team1/wDigit2<0>
+    SLICE_X20Y10.F4      net (fanout=10)       0.452   u_Team1/wDigit1_and0000
+    SLICE_X20Y10.X       Tilo                  0.529   u_Team1/wDigit2<0>
                                                        u_Team1/wDigit2_not00021
-    SLICE_X23Y11.CE      net (fanout=4)        0.942   u_Team1/wDigit2_not0002
-    SLICE_X23Y11.CLK     Tceck                 0.524   u_Team1/wDigit2<0>
-                                                       u_Team1/wDigit2_0
-    -------------------------------------------------  ---------------------------
-    Total                                      6.108ns (2.637ns logic, 3.471ns route)
-                                                       (43.2% logic, 56.8% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     33.937ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               u_Team1/wDigit2_1 (FF)
-  Destination:          u_Team1/wDigit2_0 (FF)
-  Requirement:          40.000ns
-  Data Path Delay:      6.063ns (Levels of Logic = 3)
-  Clock Path Skew:      0.000ns
-  Source Clock:         CLK_BUFGP rising at 0.000ns
-  Destination Clock:    CLK_BUFGP rising at 40.000ns
-  Clock Uncertainty:    0.000ns
-
-  Maximum Data Path: u_Team1/wDigit2_1 to u_Team1/wDigit2_0
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X24Y10.XQ      Tcko                  0.626   u_Team1/wDigit2<1>
-                                                       u_Team1/wDigit2_1
-    SLICE_X24Y8.F2       net (fanout=9)        0.624   u_Team1/wDigit2<1>
-    SLICE_X24Y8.X        Tilo                  0.529   N108
-                                                       u_Team1/wDigit1_and000019_SW0
-    SLICE_X25Y9.G2       net (fanout=1)        1.292   N108
-    SLICE_X25Y9.Y        Tilo                  0.479   u_Team1/wDigit1_not0002
-                                                       u_Team1/wDigit1_and000019
-    SLICE_X23Y11.F1      net (fanout=10)       0.568   u_Team1/wDigit1_and0000
-    SLICE_X23Y11.X       Tilo                  0.479   u_Team1/wDigit2<0>
-                                                       u_Team1/wDigit2_not00021
-    SLICE_X23Y11.CE      net (fanout=4)        0.942   u_Team1/wDigit2_not0002
-    SLICE_X23Y11.CLK     Tceck                 0.524   u_Team1/wDigit2<0>
-                                                       u_Team1/wDigit2_0
-    -------------------------------------------------  ---------------------------
-    Total                                      6.063ns (2.637ns logic, 3.426ns route)
-                                                       (43.5% logic, 56.5% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     34.051ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               u_Team1/wDigit2_2 (FF)
-  Destination:          u_Team1/wDigit2_0 (FF)
-  Requirement:          40.000ns
-  Data Path Delay:      5.949ns (Levels of Logic = 3)
-  Clock Path Skew:      0.000ns
-  Source Clock:         CLK_BUFGP rising at 0.000ns
-  Destination Clock:    CLK_BUFGP rising at 40.000ns
-  Clock Uncertainty:    0.000ns
-
-  Maximum Data Path: u_Team1/wDigit2_2 to u_Team1/wDigit2_0
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X25Y10.XQ      Tcko                  0.626   u_Team1/wDigit2<2>
+    SLICE_X19Y10.CE      net (fanout=4)        0.659   u_Team1/wDigit2_not0002
+    SLICE_X19Y10.CLK     Tceck                 0.524   u_Team1/wDigit2<2>
                                                        u_Team1/wDigit2_2
-    SLICE_X24Y8.F4       net (fanout=10)       0.510   u_Team1/wDigit2<2>
-    SLICE_X24Y8.X        Tilo                  0.529   N108
-                                                       u_Team1/wDigit1_and000019_SW0
-    SLICE_X25Y9.G2       net (fanout=1)        1.292   N108
-    SLICE_X25Y9.Y        Tilo                  0.479   u_Team1/wDigit1_not0002
-                                                       u_Team1/wDigit1_and000019
-    SLICE_X23Y11.F1      net (fanout=10)       0.568   u_Team1/wDigit1_and0000
-    SLICE_X23Y11.X       Tilo                  0.479   u_Team1/wDigit2<0>
-                                                       u_Team1/wDigit2_not00021
-    SLICE_X23Y11.CE      net (fanout=4)        0.942   u_Team1/wDigit2_not0002
-    SLICE_X23Y11.CLK     Tceck                 0.524   u_Team1/wDigit2<0>
-                                                       u_Team1/wDigit2_0
     -------------------------------------------------  ---------------------------
-    Total                                      5.949ns (2.637ns logic, 3.312ns route)
-                                                       (44.3% logic, 55.7% route)
+    Total                                      5.661ns (2.737ns logic, 2.924ns route)
+                                                       (48.3% logic, 51.7% route)
 
 --------------------------------------------------------------------------------
-
-Paths for end point u_Team1/wDigit2_3 (SLICE_X25Y11.CE), 15 paths
---------------------------------------------------------------------------------
-Slack (setup path):     33.893ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               u_Team1/wDigit2_0 (FF)
-  Destination:          u_Team1/wDigit2_3 (FF)
+Slack (setup path):     34.574ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u_Team1/wScore_0 (FF)
+  Destination:          u_Team1/wDigit2_2 (FF)
   Requirement:          40.000ns
-  Data Path Delay:      6.107ns (Levels of Logic = 3)
+  Data Path Delay:      5.426ns (Levels of Logic = 3)
   Clock Path Skew:      0.000ns
   Source Clock:         CLK_BUFGP rising at 0.000ns
   Destination Clock:    CLK_BUFGP rising at 40.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: u_Team1/wDigit2_0 to u_Team1/wDigit2_3
+  Maximum Data Path: u_Team1/wScore_0 to u_Team1/wDigit2_2
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X23Y11.YQ      Tcko                  0.626   u_Team1/wDigit2<0>
-                                                       u_Team1/wDigit2_0
-    SLICE_X24Y8.F1       net (fanout=9)        0.669   u_Team1/wDigit2<0>
-    SLICE_X24Y8.X        Tilo                  0.529   N108
-                                                       u_Team1/wDigit1_and000019_SW0
-    SLICE_X25Y9.G2       net (fanout=1)        1.292   N108
-    SLICE_X25Y9.Y        Tilo                  0.479   u_Team1/wDigit1_not0002
+    SLICE_X32Y8.YQ       Tcko                  0.626   u_Team1/wScore<1>
+                                                       u_Team1/wScore_0
+    SLICE_X32Y9.F4       net (fanout=3)        0.616   u_Team1/wScore<0>
+    SLICE_X32Y9.X        Tilo                  0.529   u_Team1/wDigit1_and000010
+                                                       u_Team1/wDigit1_and000010
+    SLICE_X20Y9.G2       net (fanout=1)        0.962   u_Team1/wDigit1_and000010
+    SLICE_X20Y9.Y        Tilo                  0.529   u_Team1/wDigit1_not0002
                                                        u_Team1/wDigit1_and000019
-    SLICE_X23Y11.F1      net (fanout=10)       0.568   u_Team1/wDigit1_and0000
-    SLICE_X23Y11.X       Tilo                  0.479   u_Team1/wDigit2<0>
+    SLICE_X20Y10.F4      net (fanout=10)       0.452   u_Team1/wDigit1_and0000
+    SLICE_X20Y10.X       Tilo                  0.529   u_Team1/wDigit2<0>
                                                        u_Team1/wDigit2_not00021
-    SLICE_X25Y11.CE      net (fanout=4)        0.941   u_Team1/wDigit2_not0002
-    SLICE_X25Y11.CLK     Tceck                 0.524   u_Team1/wDigit2<3>
-                                                       u_Team1/wDigit2_3
-    -------------------------------------------------  ---------------------------
-    Total                                      6.107ns (2.637ns logic, 3.470ns route)
-                                                       (43.2% logic, 56.8% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     33.938ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               u_Team1/wDigit2_1 (FF)
-  Destination:          u_Team1/wDigit2_3 (FF)
-  Requirement:          40.000ns
-  Data Path Delay:      6.062ns (Levels of Logic = 3)
-  Clock Path Skew:      0.000ns
-  Source Clock:         CLK_BUFGP rising at 0.000ns
-  Destination Clock:    CLK_BUFGP rising at 40.000ns
-  Clock Uncertainty:    0.000ns
-
-  Maximum Data Path: u_Team1/wDigit2_1 to u_Team1/wDigit2_3
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X24Y10.XQ      Tcko                  0.626   u_Team1/wDigit2<1>
-                                                       u_Team1/wDigit2_1
-    SLICE_X24Y8.F2       net (fanout=9)        0.624   u_Team1/wDigit2<1>
-    SLICE_X24Y8.X        Tilo                  0.529   N108
-                                                       u_Team1/wDigit1_and000019_SW0
-    SLICE_X25Y9.G2       net (fanout=1)        1.292   N108
-    SLICE_X25Y9.Y        Tilo                  0.479   u_Team1/wDigit1_not0002
-                                                       u_Team1/wDigit1_and000019
-    SLICE_X23Y11.F1      net (fanout=10)       0.568   u_Team1/wDigit1_and0000
-    SLICE_X23Y11.X       Tilo                  0.479   u_Team1/wDigit2<0>
-                                                       u_Team1/wDigit2_not00021
-    SLICE_X25Y11.CE      net (fanout=4)        0.941   u_Team1/wDigit2_not0002
-    SLICE_X25Y11.CLK     Tceck                 0.524   u_Team1/wDigit2<3>
-                                                       u_Team1/wDigit2_3
-    -------------------------------------------------  ---------------------------
-    Total                                      6.062ns (2.637ns logic, 3.425ns route)
-                                                       (43.5% logic, 56.5% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     34.052ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               u_Team1/wDigit2_2 (FF)
-  Destination:          u_Team1/wDigit2_3 (FF)
-  Requirement:          40.000ns
-  Data Path Delay:      5.948ns (Levels of Logic = 3)
-  Clock Path Skew:      0.000ns
-  Source Clock:         CLK_BUFGP rising at 0.000ns
-  Destination Clock:    CLK_BUFGP rising at 40.000ns
-  Clock Uncertainty:    0.000ns
-
-  Maximum Data Path: u_Team1/wDigit2_2 to u_Team1/wDigit2_3
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X25Y10.XQ      Tcko                  0.626   u_Team1/wDigit2<2>
+    SLICE_X19Y10.CE      net (fanout=4)        0.659   u_Team1/wDigit2_not0002
+    SLICE_X19Y10.CLK     Tceck                 0.524   u_Team1/wDigit2<2>
                                                        u_Team1/wDigit2_2
-    SLICE_X24Y8.F4       net (fanout=10)       0.510   u_Team1/wDigit2<2>
-    SLICE_X24Y8.X        Tilo                  0.529   N108
-                                                       u_Team1/wDigit1_and000019_SW0
-    SLICE_X25Y9.G2       net (fanout=1)        1.292   N108
-    SLICE_X25Y9.Y        Tilo                  0.479   u_Team1/wDigit1_not0002
-                                                       u_Team1/wDigit1_and000019
-    SLICE_X23Y11.F1      net (fanout=10)       0.568   u_Team1/wDigit1_and0000
-    SLICE_X23Y11.X       Tilo                  0.479   u_Team1/wDigit2<0>
-                                                       u_Team1/wDigit2_not00021
-    SLICE_X25Y11.CE      net (fanout=4)        0.941   u_Team1/wDigit2_not0002
-    SLICE_X25Y11.CLK     Tceck                 0.524   u_Team1/wDigit2<3>
-                                                       u_Team1/wDigit2_3
     -------------------------------------------------  ---------------------------
-    Total                                      5.948ns (2.637ns logic, 3.311ns route)
-                                                       (44.3% logic, 55.7% route)
+    Total                                      5.426ns (2.737ns logic, 2.689ns route)
+                                                       (50.4% logic, 49.6% route)
 
 --------------------------------------------------------------------------------
 
 Hold Paths: ts_clk = PERIOD TIMEGRP "CLK" 40 ns HIGH 50%;
 --------------------------------------------------------------------------------
 
-Paths for end point u_Push1/rDebouce_3 (SLICE_X16Y11.BX), 1 path
+Paths for end point u_Change/rDebouce_1 (SLICE_X12Y7.BX), 1 path
 --------------------------------------------------------------------------------
 Slack (hold path):      0.703ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               u_Push1/rDebouce_2 (FF)
-  Destination:          u_Push1/rDebouce_3 (FF)
+  Source:               u_Change/rDebouce_0 (FF)
+  Destination:          u_Change/rDebouce_1 (FF)
   Requirement:          0.000ns
   Data Path Delay:      0.703ns (Levels of Logic = 0)
   Clock Path Skew:      0.000ns
@@ -363,55 +363,28 @@ Slack (hold path):      0.703ns (requirement - (clock path skew + uncertainty - 
   Destination Clock:    CLK_BUFGP rising at 40.000ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path: u_Push1/rDebouce_2 to u_Push1/rDebouce_3
+  Minimum Data Path: u_Change/rDebouce_0 to u_Change/rDebouce_1
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X16Y11.YQ      Tcko                  0.501   u_Push1/rDebouce<3>
-                                                       u_Push1/rDebouce_2
-    SLICE_X16Y11.BX      net (fanout=2)        0.448   u_Push1/rDebouce<2>
-    SLICE_X16Y11.CLK     Tckdi       (-Th)     0.246   u_Push1/rDebouce<3>
-                                                       u_Push1/rDebouce_3
+    SLICE_X12Y7.YQ       Tcko                  0.501   u_Change/rDebouce<1>
+                                                       u_Change/rDebouce_0
+    SLICE_X12Y7.BX       net (fanout=2)        0.448   u_Change/rDebouce<0>
+    SLICE_X12Y7.CLK      Tckdi       (-Th)     0.246   u_Change/rDebouce<1>
+                                                       u_Change/rDebouce_1
     -------------------------------------------------  ---------------------------
     Total                                      0.703ns (0.255ns logic, 0.448ns route)
                                                        (36.3% logic, 63.7% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point u_Push3/rDebouce_1 (SLICE_X19Y10.BX), 1 path
+Paths for end point u_Push1/rDebouce_1 (SLICE_X17Y6.BX), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.709ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               u_Push3/rDebouce_0 (FF)
-  Destination:          u_Push3/rDebouce_1 (FF)
-  Requirement:          0.000ns
-  Data Path Delay:      0.709ns (Levels of Logic = 0)
-  Clock Path Skew:      0.000ns
-  Source Clock:         CLK_BUFGP rising at 40.000ns
-  Destination Clock:    CLK_BUFGP rising at 40.000ns
-  Clock Uncertainty:    0.000ns
-
-  Minimum Data Path: u_Push3/rDebouce_0 to u_Push3/rDebouce_1
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X19Y10.YQ      Tcko                  0.501   u_Push3/rDebouce<1>
-                                                       u_Push3/rDebouce_0
-    SLICE_X19Y10.BX      net (fanout=2)        0.454   u_Push3/rDebouce<0>
-    SLICE_X19Y10.CLK     Tckdi       (-Th)     0.246   u_Push3/rDebouce<1>
-                                                       u_Push3/rDebouce_1
-    -------------------------------------------------  ---------------------------
-    Total                                      0.709ns (0.255ns logic, 0.454ns route)
-                                                       (36.0% logic, 64.0% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point u_Push1/rDebouce_1 (SLICE_X14Y11.BX), 1 path
---------------------------------------------------------------------------------
-Slack (hold path):      0.719ns (requirement - (clock path skew + uncertainty - data path))
+Slack (hold path):      0.703ns (requirement - (clock path skew + uncertainty - data path))
   Source:               u_Push1/rDebouce_0 (FF)
   Destination:          u_Push1/rDebouce_1 (FF)
   Requirement:          0.000ns
-  Data Path Delay:      0.719ns (Levels of Logic = 0)
+  Data Path Delay:      0.703ns (Levels of Logic = 0)
   Clock Path Skew:      0.000ns
   Source Clock:         CLK_BUFGP rising at 40.000ns
   Destination Clock:    CLK_BUFGP rising at 40.000ns
@@ -421,14 +394,41 @@ Slack (hold path):      0.719ns (requirement - (clock path skew + uncertainty - 
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X14Y11.YQ      Tcko                  0.501   u_Push1/rDebouce<1>
+    SLICE_X17Y6.YQ       Tcko                  0.501   u_Push1/rDebouce<1>
                                                        u_Push1/rDebouce_0
-    SLICE_X14Y11.BX      net (fanout=2)        0.464   u_Push1/rDebouce<0>
-    SLICE_X14Y11.CLK     Tckdi       (-Th)     0.246   u_Push1/rDebouce<1>
+    SLICE_X17Y6.BX       net (fanout=2)        0.448   u_Push1/rDebouce<0>
+    SLICE_X17Y6.CLK      Tckdi       (-Th)     0.246   u_Push1/rDebouce<1>
                                                        u_Push1/rDebouce_1
     -------------------------------------------------  ---------------------------
-    Total                                      0.719ns (0.255ns logic, 0.464ns route)
-                                                       (35.5% logic, 64.5% route)
+    Total                                      0.703ns (0.255ns logic, 0.448ns route)
+                                                       (36.3% logic, 63.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point u_Push3/rDebouce_1 (SLICE_X15Y9.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.721ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               u_Push3/rDebouce_0 (FF)
+  Destination:          u_Push3/rDebouce_1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.721ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_BUFGP rising at 40.000ns
+  Destination Clock:    CLK_BUFGP rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: u_Push3/rDebouce_0 to u_Push3/rDebouce_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X15Y9.YQ       Tcko                  0.501   u_Push3/rDebouce<1>
+                                                       u_Push3/rDebouce_0
+    SLICE_X15Y9.BX       net (fanout=2)        0.466   u_Push3/rDebouce<0>
+    SLICE_X15Y9.CLK      Tckdi       (-Th)     0.246   u_Push3/rDebouce<1>
+                                                       u_Push3/rDebouce_1
+    -------------------------------------------------  ---------------------------
+    Total                                      0.721ns (0.255ns logic, 0.466ns route)
+                                                       (35.4% logic, 64.6% route)
 
 --------------------------------------------------------------------------------
 
@@ -438,27 +438,27 @@ Slack: 38.498ns (period - (min low pulse limit / (low pulse / period)))
   Period: 40.000ns
   Low pulse: 20.000ns
   Low pulse limit: 0.751ns (Trpw)
-  Physical resource: u_Change/rDebouce<1>/SR
-  Logical resource: u_Change/rDebouce_1/SR
-  Location pin: SLICE_X12Y8.SR
+  Physical resource: u_Team2/wDigit2<0>/SR
+  Logical resource: u_Team2/wDigit2_0/SR
+  Location pin: SLICE_X26Y6.SR
   Clock network: Rstb_IBUF
 --------------------------------------------------------------------------------
 Slack: 38.498ns (period - (min high pulse limit / (high pulse / period)))
   Period: 40.000ns
   High pulse: 20.000ns
   High pulse limit: 0.751ns (Trpw)
-  Physical resource: u_Change/rDebouce<1>/SR
-  Logical resource: u_Change/rDebouce_1/SR
-  Location pin: SLICE_X12Y8.SR
+  Physical resource: u_Team2/wDigit2<0>/SR
+  Logical resource: u_Team2/wDigit2_0/SR
+  Location pin: SLICE_X26Y6.SR
   Clock network: Rstb_IBUF
 --------------------------------------------------------------------------------
 Slack: 38.498ns (period - (min low pulse limit / (low pulse / period)))
   Period: 40.000ns
   Low pulse: 20.000ns
   Low pulse limit: 0.751ns (Trpw)
-  Physical resource: u_Change/rDebouce<1>/SR
-  Logical resource: u_Change/rDebouce_0/SR
-  Location pin: SLICE_X12Y8.SR
+  Physical resource: u_Team1/wDigit1<2>/SR
+  Logical resource: u_Team1/wDigit1_2/SR
+  Location pin: SLICE_X21Y9.SR
   Clock network: Rstb_IBUF
 --------------------------------------------------------------------------------
 
@@ -475,7 +475,7 @@ Clock to Setup on destination clock CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    6.115|         |         |         |
+CLK            |    6.457|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
@@ -484,23 +484,23 @@ Timing summary:
 
 Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 
-Constraints cover 1544 paths, 0 nets, and 670 connections
+Constraints cover 1575 paths, 0 nets, and 673 connections
 
 Design statistics:
-   Minimum period:   6.115ns{1}   (Maximum frequency: 163.532MHz)
+   Minimum period:   6.457ns{1}   (Maximum frequency: 154.871MHz)
 
 
 ------------------------------------Footnotes-----------------------------------
 1)  The minimum period statistic assumes all single cycle delays.
 
-Analysis completed Sat Nov 18 07:45:37 2017 
+Analysis completed Sun Nov 19 13:57:05 2017 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 323 MB
+Peak Memory Usage: 166 MB
 
 
 

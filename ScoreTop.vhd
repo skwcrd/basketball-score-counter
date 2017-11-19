@@ -23,6 +23,15 @@ Architecture Structural of ScoreTop is
 	);
 	End Component CLK1ms;
 	
+	Component CLK1s is
+	Port(
+		CLK : in std_logic;
+		Rstb : in std_logic;
+		i1ms : in std_logic;
+		o1s : out std_logic
+	);
+	End Component CLK1s;
+	
 	Component Debouce is
 	Port(
 		CLK : in std_logic;
@@ -67,7 +76,7 @@ Architecture Structural of ScoreTop is
 	Component FSM_COM is
 	Port(
 		CLK,Rstb : in std_logic;
-		i1ms : in std_logic;
+		i1s : in std_logic;
 		I : in std_logic;
 		iCOM : in std_logic_vector(3 downto 0);
 		com : out std_logic_vector(3 downto 0)
@@ -83,7 +92,7 @@ Architecture Structural of ScoreTop is
 	);
 	End Component Counter;
 	
-	signal w1ms : std_logic;
+	signal w1ms,w1s : std_logic;
 	signal wT1Push1,wT1Push2,wT1Push3 : std_logic;
 	signal wT2Push1,wT2Push2,wT2Push3 : std_logic;
 	signal wData : std_logic_vector(3 downto 0);
@@ -98,6 +107,14 @@ Begin
 		CLK	=> CLK,
 		Rstb	=> Rstb,
 		o1ms	=> w1ms
+	);
+	
+	u_CLK1s : CLK1s
+	Port Map(
+		CLK	=> CLK,
+		Rstb	=> Rstb,
+		i1ms	=> w1ms,
+		o1s	=> w1s
 	);
 	
 	u_Push1 : Debouce
@@ -180,7 +197,7 @@ Begin
 	Port Map(
 		CLK	=> CLK,
 		Rstb	=> Rstb,
-		i1ms	=> w1ms,
+		i1s	=> w1s,
 		I		=> wChange,
 		iCOM	=> wCOM,
 		com	=> com

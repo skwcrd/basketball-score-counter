@@ -1,47 +1,45 @@
-V3 31
-FL /root/VHDL/Sport/ScoreCounts/BCD.vhd 2017/11/01.23:01:08 P.20131013
-EN work/BCD 1511012710 FL /root/VHDL/Sport/ScoreCounts/BCD.vhd \
-      PB ieee/std_logic_1164 1381692176
-AR work/BCD/Behavioral 1511012711 \
-      FL /root/VHDL/Sport/ScoreCounts/BCD.vhd EN work/BCD 1511012710
-FL /root/VHDL/Sport/ScoreCounts/CLK1ms.vhd 2017/11/12.02:06:50 P.20131013
-EN work/CLK1ms 1511012698 FL /root/VHDL/Sport/ScoreCounts/CLK1ms.vhd \
+V3 35
+FL D:/ScoreCounts/BCD.vhd 2017/11/02.04:01:08 P.20131013
+EN work/BCD 1511074621 FL D:/ScoreCounts/BCD.vhd PB ieee/std_logic_1164 1381692176
+AR work/BCD/Behavioral 1511074622 \
+      FL D:/ScoreCounts/BCD.vhd EN work/BCD 1511074621
+FL D:/ScoreCounts/CLK1ms.vhd 2017/11/12.08:06:50 P.20131013
+EN work/CLK1ms 1511074607 FL D:/ScoreCounts/CLK1ms.vhd PB ieee/std_logic_1164 1381692176 \
+      PB ieee/std_logic_arith 1381692177 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/CLK1ms/Behavioral 1511074608 \
+      FL D:/ScoreCounts/CLK1ms.vhd EN work/CLK1ms 1511074607
+FL D:/ScoreCounts/CLK1s.vhd 2017/11/19.13:54:27 P.20131013
+EN work/CLK1s 1511074609 FL D:/ScoreCounts/CLK1s.vhd PB ieee/std_logic_1164 1381692176 \
+      PB ieee/std_logic_arith 1381692177 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/CLK1s/Behavioral 1511074610 \
+      FL D:/ScoreCounts/CLK1s.vhd EN work/CLK1s 1511074609
+FL D:/ScoreCounts/Counter.vhd 2017/11/17.11:12:10 P.20131013
+EN work/Counter 1511074613 FL D:/ScoreCounts/Counter.vhd PB ieee/std_logic_1164 1381692176 \
+      PB ieee/std_logic_arith 1381692177 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Counter/Behavioral 1511074614 \
+      FL D:/ScoreCounts/Counter.vhd EN work/Counter 1511074613
+FL D:/ScoreCounts/Debouce.vhd 2017/11/02.04:17:10 P.20131013
+EN work/Debouce 1511074611 FL D:/ScoreCounts/Debouce.vhd PB ieee/std_logic_1164 1381692176 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 PB ieee/std_logic_arith 1381692177
+AR work/Debouce/Behavioral 1511074612 \
+      FL D:/ScoreCounts/Debouce.vhd EN work/Debouce 1511074611
+FL D:/ScoreCounts/FSM_COM.vhd 2017/11/19.13:56:34 P.20131013
+EN work/FSM_COM 1511074617 FL D:/ScoreCounts/FSM_COM.vhd PB ieee/std_logic_1164 1381692176 \
+      PB ieee/std_logic_arith 1381692177 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/FSM_COM/Behavioral 1511074618 \
+      FL D:/ScoreCounts/FSM_COM.vhd EN work/FSM_COM 1511074617
+FL D:/ScoreCounts/FSM_Push.vhd 2017/11/12.09:16:46 P.20131013
+EN work/FSM_Push 1511074615 FL D:/ScoreCounts/FSM_Push.vhd PB ieee/std_logic_1164 1381692176
+AR work/FSM_Push/Behavioral 1511074616 \
+      FL D:/ScoreCounts/FSM_Push.vhd EN work/FSM_Push 1511074615
+FL D:/ScoreCounts/ScanDigit.vhd 2017/11/12.06:53:28 P.20131013
+EN work/ScanDigit 1511074619 FL D:/ScoreCounts/ScanDigit.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/CLK1ms/Behavioral 1511012699 \
-      FL /root/VHDL/Sport/ScoreCounts/CLK1ms.vhd EN work/CLK1ms 1511012698
-FL /root/VHDL/Sport/ScoreCounts/Counter.vhd 2017/11/17.05:12:10 P.20131013
-EN work/Counter 1511012702 FL /root/VHDL/Sport/ScoreCounts/Counter.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/Counter/Behavioral 1511012703 \
-      FL /root/VHDL/Sport/ScoreCounts/Counter.vhd EN work/Counter 1511012702
-FL /root/VHDL/Sport/ScoreCounts/Debouce.vhd 2017/11/01.23:17:10 P.20131013
-EN work/Debouce 1511012700 FL /root/VHDL/Sport/ScoreCounts/Debouce.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
-      PB ieee/std_logic_arith 1381692177
-AR work/Debouce/Behavioral 1511012701 \
-      FL /root/VHDL/Sport/ScoreCounts/Debouce.vhd EN work/Debouce 1511012700
-FL /root/VHDL/Sport/ScoreCounts/FSM_COM.vhd 2017/11/17.04:07:46 P.20131013
-EN work/FSM_COM 1511012706 FL /root/VHDL/Sport/ScoreCounts/FSM_COM.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/FSM_COM/Behavioral 1511012707 \
-      FL /root/VHDL/Sport/ScoreCounts/FSM_COM.vhd EN work/FSM_COM 1511012706
-FL /root/VHDL/Sport/ScoreCounts/FSM_Push.vhd 2017/11/12.03:16:46 P.20131013
-EN work/FSM_Push 1511012704 FL /root/VHDL/Sport/ScoreCounts/FSM_Push.vhd \
-      PB ieee/std_logic_1164 1381692176
-AR work/FSM_Push/Behavioral 1511012705 \
-      FL /root/VHDL/Sport/ScoreCounts/FSM_Push.vhd EN work/FSM_Push 1511012704
-FL /root/VHDL/Sport/ScoreCounts/ScanDigit.vhd 2017/11/12.00:53:28 P.20131013
-EN work/ScanDigit 1511012708 FL /root/VHDL/Sport/ScoreCounts/ScanDigit.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/ScanDigit/Behavioral 1511012709 \
-      FL /root/VHDL/Sport/ScoreCounts/ScanDigit.vhd EN work/ScanDigit 1511012708
-FL /root/VHDL/Sport/ScoreCounts/ScoreTop.vhd 2017/11/17.04:21:23 P.20131013
-EN work/ScoreTop 1511012712 FL /root/VHDL/Sport/ScoreCounts/ScoreTop.vhd \
-      PB ieee/std_logic_1164 1381692176
-AR work/ScoreTop/Structural 1511012713 \
-      FL /root/VHDL/Sport/ScoreCounts/ScoreTop.vhd EN work/ScoreTop 1511012712 \
-      CP CLK1ms CP Debouce CP Counter CP FSM_Push CP FSM_COM CP ScanDigit CP BCD
+AR work/ScanDigit/Behavioral 1511074620 \
+      FL D:/ScoreCounts/ScanDigit.vhd EN work/ScanDigit 1511074619
+FL D:/ScoreCounts/ScoreTop.vhd 2017/11/19.13:53:05 P.20131013
+EN work/ScoreTop 1511074623 FL D:/ScoreCounts/ScoreTop.vhd PB ieee/std_logic_1164 1381692176
+AR work/ScoreTop/Structural 1511074624 \
+      FL D:/ScoreCounts/ScoreTop.vhd EN work/ScoreTop 1511074623 CP CLK1ms CP CLK1s \
+      CP Debouce CP Counter CP FSM_Push CP FSM_COM CP ScanDigit CP BCD

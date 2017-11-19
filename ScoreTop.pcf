@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Sat Nov 18 07:45:22 2017
+// Written by: Map P.20131013 on Sun Nov 19 13:56:59 2017
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -29,22 +29,21 @@ COMP "com<3>" LOCATE = SITE "P31" LEVEL 1;
 COMP "Change" LOCATE = SITE "P50" LEVEL 1;
 COMP "CLK" LOCATE = SITE "P127" LEVEL 1;
 NET "CLK_BUFGP/IBUFG" BEL "CLK_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
-TIMEGRP CLK = BEL "u_CLK1ms/r1ms" BEL "u_CLK1ms/rCnt_0" BEL "u_CLK1ms/rCnt_1"
-        BEL "u_CLK1ms/rCnt_2" BEL "u_CLK1ms/rCnt_3" BEL "u_CLK1ms/rCnt_4" BEL
-        "u_CLK1ms/rCnt_5" BEL "u_CLK1ms/rCnt_6" BEL "u_CLK1ms/rCnt_7" BEL
-        "u_CLK1ms/rCnt_8" BEL "u_CLK1ms/rCnt_9" BEL "u_CLK1ms/rCnt_10" BEL
-        "u_CLK1ms/rCnt_11" BEL "u_CLK1ms/rCnt_12" BEL "u_CLK1ms/rCnt_13" BEL
-        "u_CLK1ms/rCnt_14" BEL "u_FSMpush/oT2Push2" BEL "u_FSMpush/oT2Push1"
-        BEL "u_FSMpush/oT2Push3" BEL "u_FSMpush/oT1Push3" BEL
-        "u_FSMpush/oT1Push2" BEL "u_FSMpush/oT1Push1" BEL
-        "u_FSMpush/curr_state_0" BEL "u_FSMcom/rCnt500ms_8" BEL
-        "u_FSMcom/rCnt500ms_7" BEL "u_FSMcom/rCnt500ms_6" BEL
-        "u_FSMcom/rCnt500ms_5" BEL "u_FSMcom/rCnt500ms_4" BEL
-        "u_FSMcom/rCnt500ms_3" BEL "u_FSMcom/rCnt500ms_2" BEL
-        "u_FSMcom/rCnt500ms_1" BEL "u_FSMcom/rCnt500ms_0" BEL "u_FSMcom/rCnt"
-        BEL "u_FSMcom/rCnP" BEL "u_FSMcom/wCom_3" BEL "u_FSMcom/wCom_2" BEL
-        "u_FSMcom/wCom_1" BEL "u_FSMcom/wCom_0" BEL "u_FSMcom/curr_state_0"
-        BEL "u_Change/rCnt_2" BEL "u_Change/rCnt_1" BEL "u_Change/rCnt_0" BEL
+TIMEGRP CLK = BEL "u_CLK1ms/r1ms" BEL "u_CLK1s/r1s" BEL "u_CLK1s/rCnt_0" BEL
+        "u_CLK1s/rCnt_1" BEL "u_CLK1s/rCnt_2" BEL "u_CLK1s/rCnt_3" BEL
+        "u_CLK1s/rCnt_4" BEL "u_CLK1s/rCnt_5" BEL "u_CLK1s/rCnt_6" BEL
+        "u_CLK1s/rCnt_7" BEL "u_CLK1s/rCnt_8" BEL "u_CLK1s/rCnt_9" BEL
+        "u_CLK1ms/rCnt_0" BEL "u_CLK1ms/rCnt_1" BEL "u_CLK1ms/rCnt_2" BEL
+        "u_CLK1ms/rCnt_3" BEL "u_CLK1ms/rCnt_4" BEL "u_CLK1ms/rCnt_5" BEL
+        "u_CLK1ms/rCnt_6" BEL "u_CLK1ms/rCnt_7" BEL "u_CLK1ms/rCnt_8" BEL
+        "u_CLK1ms/rCnt_9" BEL "u_CLK1ms/rCnt_10" BEL "u_CLK1ms/rCnt_11" BEL
+        "u_CLK1ms/rCnt_12" BEL "u_CLK1ms/rCnt_13" BEL "u_CLK1ms/rCnt_14" BEL
+        "u_FSMpush/oT2Push2" BEL "u_FSMpush/oT2Push1" BEL "u_FSMpush/oT2Push3"
+        BEL "u_FSMpush/oT1Push3" BEL "u_FSMpush/oT1Push2" BEL
+        "u_FSMpush/oT1Push1" BEL "u_FSMpush/curr_state_0" BEL
+        "u_FSMcom/curr_state_0" BEL "u_FSMcom/wCom_3" BEL "u_FSMcom/wCom_2"
+        BEL "u_FSMcom/wCom_1" BEL "u_FSMcom/wCom_0" BEL "u_FSMcom/rCnt" BEL
+        "u_Change/rCnt_2" BEL "u_Change/rCnt_1" BEL "u_Change/rCnt_0" BEL
         "u_Change/rDebouce_3" BEL "u_Change/rDebouce_2" BEL
         "u_Change/rDebouce_1" BEL "u_Change/rDebouce_0" BEL "u_Change/O" BEL
         "u_Change/rTick" BEL "u_Push3/rCnt_2" BEL "u_Push3/rCnt_1" BEL
